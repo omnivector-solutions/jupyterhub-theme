@@ -1,0 +1,49 @@
+<svg
+  width='137'
+  height='32'
+  viewBox='0 0 137 32'
+  fill='none'
+  xmlns='http://www.w3.org/2000/svg'
+>
+  <path
+    d='M45.06 4.47018H37.0052C35.6968 4.47037 34.4158 4.84478 33.3132 5.54922C32.2106 6.25367 31.3326 7.25877 30.7826 8.44594L21.9177 28.136C21.7758 28.4439 21.7137 28.7825 21.737 29.1207C21.7602 29.4589 21.8682 29.7858 22.051 30.0713C22.2338 30.3568 22.4854 30.5918 22.7828 30.7546C23.0801 30.9173 23.4137 31.0027 23.7527 31.0028H30.5511C31.3551 31.0018 32.1419 30.77 32.818 30.3351C33.4942 29.9002 34.0314 29.2804 34.3657 28.5493L35.0173 27.1331L45.06 4.47018Z'
+    fill='url(#paint0_linear_181_1139)'
+  />
+  <path
+    d='M7.95977 0.997253H0L15.2335 28.5865C15.6387 29.3165 16.2317 29.925 16.9511 30.3488C17.6704 30.7727 18.49 30.9966 19.325 30.9973H30.5937C29.015 30.8388 27.4363 27.8384 27.4363 27.8384L14.8877 5.08873C14.2044 3.84947 13.2012 2.81617 11.9827 2.09654C10.7642 1.37691 9.37493 0.997295 7.95977 0.997253V0.997253Z'
+    fill='url(#paint1_linear_181_1139)'
+  />
+  <defs>
+    <linearGradient
+      id='paint0_linear_181_1139'
+      x1='27.7105'
+      y1='28.8179'
+      x2='37.3813'
+      y2='8.29991'
+      gradientUnits='userSpaceOnUse'
+    >
+      <stop stop-color='#372A56' />
+      <stop offset='0.04' stop-color='#3C2F67' />
+      <stop offset='0.16' stop-color='#483B90' />
+      <stop offset='0.28' stop-color='#5245B1' />
+      <stop offset='0.4' stop-color='#594CCC' />
+      <stop offset='0.52' stop-color='#5F52DE' />
+      <stop offset='0.65' stop-color='#6255E9' />
+      <stop offset='0.79' stop-color='#6356ED' />
+    </linearGradient>
+    <linearGradient
+      id='paint1_linear_181_1139'
+      x1='8.54939'
+      y1='3.00993'
+      x2='24.0019'
+      y2='32.7482'
+      gradientUnits='userSpaceOnUse'
+    >
+      <stop stop-color='#89EFEC' />
+      <stop offset='0.12' stop-color='#85E1EC' />
+      <stop offset='0.34' stop-color='#7CBDEB' />
+      <stop offset='0.64' stop-color='#6D83EB' />
+      <stop offset='0.87' stop-color='#6153EA' />
+    </linearGradient>
+  </defs>
+</svg>
