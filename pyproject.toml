@@ -3,7 +3,7 @@ requires = ["hatchling>=1.5.0", "jupyterlab>=4.0.0,<5", "hatch-nodejs-version>=0
 build-backend = "hatchling.build"
 
 [project]
-name = "mytheme"
+name = "omnivector-theme"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.9"
@@ -34,23 +34,23 @@ source = "nodejs"
 fields = ["description", "authors", "urls", "keywords"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["mytheme/labextension"]
+artifacts = ["omnivector-theme/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"mytheme/labextension" = "share/jupyter/labextensions/mytheme"
-"install.json" = "share/jupyter/labextensions/mytheme/install.json"
+"omnivector-theme/labextension" = "share/jupyter/labextensions/omnivector-theme"
+"install.json" = "share/jupyter/labextensions/omnivector-theme/install.json"
 
 [tool.hatch.build.hooks.version]
-path = "mytheme/_version.py"
+path = "omnivector-theme/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "mytheme/labextension/package.json",
+    "omnivector-theme/labextension/package.json",
 ]
-skip-if-exists = ["mytheme/labextension/static/style.js"]
+skip-if-exists = ["omnivector-theme/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 build_cmd = "build:prod"
@@ -60,7 +60,7 @@ npm = ["jlpm"]
 build_cmd = "install:extension"
 npm = ["jlpm"]
 source_dir = "src"
-build_dir = "mytheme/labextension"
+build_dir = "omnivector-theme/labextension"
 
 [tool.jupyter-releaser.options]
 version_cmd = "hatch version"

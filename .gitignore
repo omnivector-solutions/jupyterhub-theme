@@ -7,9 +7,9 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-mytheme/labextension
+omnivector-theme/labextension
 # Version file is handled by hatchling
-mytheme/_version.py
+omnivector-theme/_version.py
 
 # Integration tests
 ui-tests/test-results/

@@ -1,8 +1,7 @@
-# mytheme
+# omnivector-theme
 
 [![Github Actions Status](/workflows/Build/badge.svg)](/actions/workflows/build.yml)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh//main?urlpath=lab)
-
 
 A JupyterLab extension.
 
@@ -15,7 +14,7 @@ A JupyterLab extension.
 To install the extension, execute:
 
 ```bash
-pip install mytheme
+pip install omnivector-theme
 ```
 
 ## Uninstall
@@ -23,7 +22,7 @@ pip install mytheme
 To remove the extension, execute:
 
 ```bash
-pip uninstall mytheme
+pip uninstall omnivector-theme
 ```
 
 ## Contributing
@@ -38,7 +37,7 @@ The `jlpm` command is JupyterLab's pinned version of
 
 ```bash
 # Clone the repo to your local environment
-# Change directory to the mytheme directory
+# Change directory to the omnivector-theme directory
 # Install package in development mode
 pip install -e "."
 # Link your development version of the extension with JupyterLab
@@ -67,12 +66,12 @@ jupyter lab build --minimize=False
 ### Development uninstall
 
 ```bash
-pip uninstall mytheme
+pip uninstall omnivector-theme
 ```
 
 In development mode, you will also need to remove the symlink created by `jupyter labextension develop`
 command. To find its location, you can run `jupyter labextension list` to figure out where the `labextensions`
-folder is located. Then you can remove the symlink named `mytheme` within that folder.
+folder is located. Then you can remove the symlink named `omnivector-theme` within that folder.
 
 ### Testing the extension
 

@@ -7360,9 +7360,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mytheme@workspace:.":
+"omnivector-theme@workspace:.":
   version: 0.0.0-use.local
-  resolution: "mytheme@workspace:."
+  resolution: "omnivector-theme@workspace:."
   dependencies:
     "@jupyterlab/application": ^4.0.0
     "@jupyterlab/apputils": ^4.0.0
