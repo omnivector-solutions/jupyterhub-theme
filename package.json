@@ -18,8 +18,6 @@
         "style/**/*.{css,js,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
         "src/**/*.{ts,tsx}"
     ],
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
     "repository": ".git",
     "scripts": {
         "build": "jlpm build:lib && jlpm build:labextension:dev",
