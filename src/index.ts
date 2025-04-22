@@ -8,13 +8,13 @@ import { IThemeManager } from '@jupyterlab/apputils';
 /**
  * Initialization data for the omnivector-theme extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
-  id: 'omnivector-theme:plugin',
+const extension: JupyterFrontEndPlugin<void> = {
+  id: 'omnivector-theme',
   description: 'A JupyterLab extension.',
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension omnivector-theme is activated!');
+    // console.log('JupyterLab extension omnivector-theme is activated!');
     const style = 'omnivector-theme/index.css';
 
     manager.register({
@@ -26,4 +26,4 @@ const plugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default plugin;
+export default extension;

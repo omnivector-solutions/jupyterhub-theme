@@ -1,15 +1,10 @@
 *.bundle.*
 lib/
 node_modules/
-*.log
-.eslintcache
-.stylelintcache
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-omnivector-theme/labextension
-# Version file is handled by hatchling
-omnivector-theme/_version.py
+jupyterlab_legos_ui/labextension
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
@@ -61,7 +56,6 @@ htmlcov/
 .coverage.*
 .cache
 nosetests.xml
-coverage/
 coverage.xml
 *.cover
 .hypothesis/
@@ -113,9 +107,3 @@ dmypy.json
 .pyre/
 
 # End of https://www.gitignore.io/api/python
-
-# OSX files
-.DS_Store
-
-# Yarn cache
-.yarn/

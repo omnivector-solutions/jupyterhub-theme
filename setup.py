@@ -3,6 +3,11 @@ omnivector-theme setup
 """
 import json
 import os
+
+from jupyter_packaging import (
+    create_cmdclass, install_npm, ensure_targets,
+    combine_commands, skip_if_exists,
+)
 import setuptools
 
 HERE = os.path.abspath(os.path.dirname(__file__))
@@ -34,8 +39,22 @@ data_files_spec = [
     ("share/jupyter/labextensions/%s" % labext_name, HERE, "install.json"),
 ]
 
+cmdclass = create_cmdclass(
+    "jsdeps",
+    package_data_spec=package_data_spec,
+    data_files_spec=data_files_spec
+)
+
+js_command = combine_commands(
+    install_npm(HERE, build_cmd="build:prod", npm=["jlpm"]),
+    ensure_targets(jstargets),
+)
 
 is_repo = os.path.exists(os.path.join(HERE, '.git'))
+if is_repo:
+    cmdclass['jsdeps'] = js_command
+else:
+    cmdclass['jsdeps'] = skip_if_exists(jstargets, js_command)
 
 
 with open("README.md", "r") as fh:
@@ -49,6 +68,7 @@ setup_args = dict(
     description="Omnivector theme for jupyterlab",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    cmdclass=cmdclass,
     packages=setuptools.find_packages(),
     zip_safe=False,
     include_package_data=True,
