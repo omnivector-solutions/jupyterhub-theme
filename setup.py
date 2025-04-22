@@ -49,7 +49,6 @@ setup_args = dict(
     description="Omnivector theme for jupyterlab",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    cmdclass=cmdclass,
     packages=setuptools.find_packages(),
     zip_safe=False,
     include_package_data=True,
