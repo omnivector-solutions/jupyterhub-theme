@@ -8,7 +8,7 @@ import { IThemeManager } from '@jupyterlab/apputils';
 /**
  * Initialization data for the omnivector-theme extension.
  */
-const plugin: JupyterFrontEndPlugin<void> = {
+const extension: JupyterFrontEndPlugin<void> = {
   id: 'omnivector-theme:plugin',
   description: 'A JupyterLab extension.',
   autoStart: true,
@@ -26,4 +26,4 @@ const plugin: JupyterFrontEndPlugin<void> = {
   }
 };
 
-export default plugin;
+export default extension;
