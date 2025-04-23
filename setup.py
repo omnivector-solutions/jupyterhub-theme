@@ -1,7 +1,7 @@
 import setuptools
 
 setup_args = dict(
-    name="omnivector-theme",
+    name="jh-vantage-theme",
     version="0.1.0",
     url="https://github.com/omnivector-solutions/jupyterhub-theme",
     author="Omnivector",

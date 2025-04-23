@@ -7,9 +7,8 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
-omnivector-theme/labextension
 # Version file is handled by hatchling
-omnivector-theme/_version.py
+jh-vantage-theme/_version.py
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python

@@ -6,19 +6,19 @@ import {
 import { IThemeManager } from '@jupyterlab/apputils';
 
 /**
- * Initialization data for the omnivector-theme extension.
+ * Initialization data for the jh-vantage-theme extension.
  */
 const extension: JupyterFrontEndPlugin<void> = {
-  id: 'omnivector-theme:plugin',
+  id: 'jh-vantage-theme:plugin',
   description: 'A JupyterLab extension.',
   autoStart: true,
   requires: [IThemeManager],
   activate: (app: JupyterFrontEnd, manager: IThemeManager) => {
-    console.log('JupyterLab extension omnivector-theme is activated!');
-    const style = 'omnivector-theme/index.css';
+    console.log('JupyterLab extension jh-vantage-theme is activated!');
+    const style = 'jh-vantage-theme/index.css';
 
     manager.register({
-      name: 'omnivector-theme',
+      name: 'jh-vantage-theme',
       isLight: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
