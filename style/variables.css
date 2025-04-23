@@ -1028,8 +1028,9 @@ body {
   transition: 0.5s;
 }
 
-.jp-FileBrowser-toolbar
-  .jp-ToolbarButtonComponent[data-command='launcher:create']:hover {
+.jp-FileBrowser-toolbar.jp-Toolbar
+  .jp-Toolbar-item:first-child
+  .jp-ToolbarButtonComponent:hover {
   background-color: #3c3095 !important;
 }
 
