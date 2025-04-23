@@ -34,12 +34,14 @@ source = "nodejs"
 fields = ["description", "authors", "urls", "keywords"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["omnivector-theme/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
 "omnivector-theme/labextension" = "share/jupyter/labextensions/omnivector-theme"
 "install.json" = "share/jupyter/labextensions/omnivector-theme/install.json"
+
+[tool.hatch.build.targets.wheel]
+packages = ["omnivector-theme"]
 
 [tool.hatch.build.hooks.version]
 path = "omnivector-theme/_version.py"
