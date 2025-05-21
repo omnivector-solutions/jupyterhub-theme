@@ -1151,3 +1151,22 @@ body {
 .jp-ToolbarButton > .jp-RunningSessions-shutdownAll {
   border: solid 1px #5642d6 !important;
 }
+
+.jp-Dialog-footer > div:not([class]) {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+  padding: 12px !important;
+}
+
+button.jp-Dialog-button.jp-mod-styled.jp-mod-accept:focus {
+  outline: 1px solid #33383c !important;
+}
+
+button.jp-mod-styled.jp-mod-accept {
+  background: #5642d6 !important;
+}
