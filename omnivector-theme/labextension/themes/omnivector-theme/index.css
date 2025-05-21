@@ -1153,3 +1153,10 @@ pre {
   border: solid 1px #5642d6 !important;
 }
 
+.lm-SplitPanel[data-type='horizontal'] > .lm-Widget:first-child {
+  min-width: 200px !important;
+}
+
+.jp-left-stack {
+  min-width: 200px !important;
+}
