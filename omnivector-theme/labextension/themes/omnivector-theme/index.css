@@ -388,7 +388,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-dialog-background: rgba(0, 0, 0, 0.25);
   /* Sidebar-related styles */
 
-  --jp-sidebar-min-width: 180px;
+  --jp-sidebar-min-width: 300px;
 
   /* NON-STANDARD THEME VARS */
   --jp-editor-cursor: medium solid #f65d22;
@@ -1151,12 +1151,4 @@ pre {
 }
 .jp-ToolbarButton > .jp-RunningSessions-shutdownAll {
   border: solid 1px #5642d6 !important;
-}
-
-.lm-SplitPanel[data-type='horizontal'] > .lm-Widget:first-child {
-  min-width: 200px !important;
-}
-
-.jp-left-stack {
-  min-width: 200px !important;
 }
