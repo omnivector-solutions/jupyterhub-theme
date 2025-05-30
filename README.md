@@ -1,7 +1,5 @@
 # jh-vantage-theme
 
-[![Github Actions Status](https://github.com/omnivector-solutions/jupyterhub-theme/workflows/Build/badge.svg)](https://github.com/omnivector-solutions/jupyterhub-theme/actions/workflows/build.yml)
-
 A JupyterLab extension.
 
 ## Requirements
